@@ -38,7 +38,7 @@ int main(){
     // Priority Scheduling (Non Preemptive)
     while(completed<n){
         int highdex = -1; // index of highest priority process selected till now
-
+        // Find highest priority among arrived processes
         for(int i=0;i<n;i++){
             if(p[i].at<=curr_time && p[i].done==0){
                 if(highdex==-1 || p[i].priority<p[highdex].priority){
